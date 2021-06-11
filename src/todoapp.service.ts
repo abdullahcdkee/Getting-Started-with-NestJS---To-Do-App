@@ -27,7 +27,7 @@ export class ToDoAppService {
     return { ...task }
   }
 
-  updateTask(id: number, title: string, desc: string, priority: string) {
+  updateTaskById(id: number, title: string, desc: string, priority: string) {
     const [task, taskIndex] = this.findTask(id)
     const updatedTask = { ...task }
 
