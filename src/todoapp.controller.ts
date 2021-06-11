@@ -45,7 +45,7 @@ export class ToDoAppController {
     @Body('desc') taskDesc: string,
     @Body('priority') taskPriority: string,
   ): string {
-    return this.todoappService.updateTask(
+    return this.todoappService.updateTaskById(
       taskId,
       taskTitle,
       taskDesc,
